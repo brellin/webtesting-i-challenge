@@ -1,0 +1,16 @@
+{
+  "name": "webtesting-i-challenge",
+  "version": "1.0.0",
+  "description": "enhancer testing",
+  "main": "enhancing/enhancer.test.js",
+  "repository": "https://github.com/brellin/webtesting-i-challenge.git",
+  "author": "brellin <cekakid@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
