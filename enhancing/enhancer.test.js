@@ -140,4 +140,22 @@ describe('enhancer.js', () => {
             })
         })
     })
+
+    describe('get() function', () => {
+        it("should return the item's name with '[+ (the item's enhancement level)]' in front of it", () => {
+            expect(enhancer.get(sword)).toStrictEqual({
+                name: '[+1] Sword',
+                durability: 50,
+                enhancement: 1
+            })
+            expect(enhancer.get({
+                ...sword,
+                enhancement: 20
+            })).toStrictEqual({
+                name: '[+20] Sword',
+                durability: 50,
+                enhancement: 20
+            })
+        })
+    })
 })
